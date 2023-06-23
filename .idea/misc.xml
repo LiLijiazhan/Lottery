@@ -7,12 +7,9 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/lottery-application/pom.xml" />
-        <option value="$PROJECT_DIR$/lottery-common/pom.xml" />
-        <option value="$PROJECT_DIR$/lottery-domain/pom.xml" />
-        <option value="$PROJECT_DIR$/lottery-infrastructure/pom.xml" />
-        <option value="$PROJECT_DIR$/lottery-interfaces/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/lottery-application/pom.xml" />
+        <option value="$PROJECT_DIR$/Lottery-Test/pom.xml" />
       </list>
     </option>
   </component>
