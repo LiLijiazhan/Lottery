@@ -12,7 +12,8 @@ public class Constants {
         SUCCESS("0000", "成功"),
         UN_ERROR("0001", "未知失败"),
         ILLEGAL_PARAMETER("0002", "非法参数"),
-        INDEX_DUP("0003", "主键冲突");
+        INDEX_DUP("0003", "主键冲突"),
+        NO_UPDATE("0004","SQL操作无更新");
 
         private String code;
         private String info;
@@ -37,21 +38,37 @@ public class Constants {
      */
     public enum ActivityState {
 
-        /** 1：编辑 */
+        /**
+         * 1：编辑
+         */
         EDIT(1, "编辑"),
-        /** 2：提审 */
+        /**
+         * 2：提审
+         */
         ARRAIGNMENT(2, "提审"),
-        /** 3：撤审 */
+        /**
+         * 3：撤审
+         */
         REVOKE(3, "撤审"),
-        /** 4：通过 */
+        /**
+         * 4：通过
+         */
         PASS(4, "通过"),
-        /** 5：运行(活动中) */
+        /**
+         * 5：运行(活动中)
+         */
         DOING(5, "运行(活动中)"),
-        /** 6：拒绝 */
+        /**
+         * 6：拒绝
+         */
         REFUSE(6, "拒绝"),
-        /** 7：关闭 */
+        /**
+         * 7：关闭
+         */
         CLOSE(7, "关闭"),
-        /** 8：开启 */
+        /**
+         * 8：开启
+         */
         OPEN(8, "开启");
 
         private Integer code;
@@ -257,12 +274,16 @@ public class Constants {
         }
     }
 
-    public enum Ids{
-        //雪花算法
+    /**
+     * Ids 生成策略枚举
+     */
+    public enum Ids {
+        /** 雪花算法 */
         SnowFlake,
-        //日期算法
+        /** 日期算法 */
         ShortCode,
-        //随机算法
-        RandomNumeric
+        /** 随机算法 */
+        RandomNumeric;
     }
+
 }
